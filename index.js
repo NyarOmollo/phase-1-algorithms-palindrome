@@ -1,6 +1,14 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let letters = word.split("");
+  let inverse = letters.reverse();
+  let newWord = inverse.join("");
+  if (word == newWord) {
+    return true;
+  }else {
+    return false;
+  }
 }
+  
 
 /* 
   Add your pseudocode here
